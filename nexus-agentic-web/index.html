@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXUS — Agentic Web Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/main.css" />
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-grid"></div>
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-logo">
+      <div class="logo-mark">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00FFB2" stroke-width="1.5" fill="none"/>
+          <polygon points="14,7 21,11 21,17 14,21 7,17 7,11" fill="#00FFB2" opacity="0.3"/>
+          <circle cx="14" cy="14" r="2.5" fill="#00FFB2"/>
+        </svg>
+      </div>
+      <span class="logo-text">NEXUS</span>
+    </div>
+    <div class="nav-links">
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#demo" class="nav-link">Live Demo</a>
+      <a href="#architecture" class="nav-link">Architecture</a>
+      <a href="#docs" class="nav-link">Docs</a>
+    </div>
+    <button class="nav-cta" onclick="scrollToDemo()">Launch Agent →</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Microsoft Hackathon 2025 — Agentic Web Theme
+    </div>
+    <h1 class="hero-title">
+      <span class="title-line">The Web.</span>
+      <span class="title-line accent">Automated.</span>
+      <span class="title-line">Intelligent.</span>
+    </h1>
+    <p class="hero-sub">
+      NEXUS is an autonomous AI agent that browses, reasons, and acts across the entire web on your behalf — extracting data, completing transactions, and orchestrating complex multi-step workflows without hand-holding.
+    </p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="scrollToDemo()">
+        <span class="btn-icon">⬡</span> Try Live Demo
+      </button>
+      <button class="btn-ghost" onclick="document.getElementById('architecture').scrollIntoView({behavior:'smooth'})">
+        View Architecture ↗
+      </button>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num" data-count="98">0</span><span class="stat-suffix">%</span>
+        <span class="stat-label">Task Success Rate</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-count="47">0</span><span class="stat-suffix">x</span>
+        <span class="stat-label">Faster than Manual</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-count="200">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Web Actions Supported</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="section-label">CAPABILITIES</div>
+    <h2 class="section-title">What NEXUS Can Do</h2>
+    <div class="features-grid">
+      <div class="feature-card card-large">
+        <div class="feature-icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <circle cx="18" cy="18" r="14" stroke="#00FFB2" stroke-width="1.5" stroke-dasharray="4 2"/>
+            <path d="M11 18 L15 22 L25 12" stroke="#00FFB2" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Autonomous Browsing</h3>
+        <p>Navigates any website, handles dynamic content, deals with CAPTCHAs, and adapts to changing layouts using vision-language models.</p>
+        <div class="feature-tags">
+          <span>Playwright</span><span>Computer Vision</span><span>DOM Parsing</span>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect x="4" y="4" width="10" height="10" rx="2" stroke="#FF6B35" stroke-width="1.5"/>
+            <rect x="18" y="4" width="10" height="10" rx="2" stroke="#FF6B35" stroke-width="1.5"/>
+            <rect x="4" y="18" width="10" height="10" rx="2" stroke="#FF6B35" stroke-width="1.5"/>
+            <rect x="18" y="18" width="10" height="10" rx="2" stroke="#FF6B35" stroke-width="1.5"/>
+            <path d="M14 9 L18 9 M9 14 L9 18 M23 14 L23 18 M14 23 L18 23" stroke="#FF6B35" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h3>Multi-Step Planning</h3>
+        <p>Breaks complex goals into executable subtasks. Plans, executes, and replans on failures using chain-of-thought reasoning.</p>
+        <div class="feature-tags">
+          <span>ReAct</span><span>Tree-of-Thought</span>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M6 26 C6 14 26 14 26 6" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="6" cy="26" r="3" fill="#A78BFA"/>
+            <circle cx="26" cy="6" r="3" fill="#A78BFA"/>
+            <circle cx="16" cy="16" r="3" stroke="#A78BFA" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <h3>Service Orchestration</h3>
+        <p>Connects and coordinates actions across multiple services — APIs, web apps, forms — in a single agent run.</p>
+        <div class="feature-tags">
+          <span>Multi-Service</span><span>OAuth</span>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M16 4 L28 10 L28 22 L16 28 L4 22 L4 10 Z" stroke="#FFD700" stroke-width="1.5" fill="none"/>
+            <path d="M16 10 L22 13 L22 19 L16 22 L10 19 L10 13 Z" fill="#FFD700" opacity="0.2"/>
+          </svg>
+        </div>
+        <h3>Resilient Recovery</h3>
+        <p>Self-heals from errors, retries with alternate strategies, and notifies users only when human judgment is truly needed.</p>
+        <div class="feature-tags">
+          <span>Error Recovery</span><span>Fallback Logic</span>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect x="4" y="8" width="24" height="16" rx="2" stroke="#00FFB2" stroke-width="1.5"/>
+            <path d="M4 13 L28 13" stroke="#00FFB2" stroke-width="1"/>
+            <circle cx="8" cy="10.5" r="1" fill="#00FFB2"/>
+            <circle cx="12" cy="10.5" r="1" fill="#00FFB2"/>
+          </svg>
+        </div>
+        <h3>Data Extraction</h3>
+        <p>Scrapes, structures, and exports data from any web source — tables, product listings, research results — into usable formats.</p>
+        <div class="feature-tags">
+          <span>JSON / CSV</span><span>Structured Output</span>
+        </div>
+      </div>
+      <div class="feature-card card-wide">
+        <div class="feature-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="12" stroke="#FF6B35" stroke-width="1.5"/>
+            <path d="M16 8 L16 16 L22 16" stroke="#FF6B35" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Real-Time Execution Trace</h3>
+        <p>Every agent action is logged in real-time with reasoning, tool calls, screenshots, and confidence scores — full transparency into what the agent is doing and why.</p>
+        <div class="feature-tags">
+          <span>Step-by-Step Logs</span><span>Reasoning Trace</span><span>Screenshots</span><span>Confidence Scores</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Demo Section -->
+  <section class="demo-section" id="demo">
+    <div class="section-label">LIVE DEMO</div>
+    <h2 class="section-title">Watch NEXUS Work</h2>
+    <p class="section-sub">Give the agent a goal. Watch it plan, browse, and execute in real time.</p>
+
+    <div class="demo-container">
+      <!-- Left: Task Input -->
+      <div class="demo-input-panel">
+        <div class="panel-header">
+          <span class="panel-dot green"></span>
+          <span class="panel-dot yellow"></span>
+          <span class="panel-dot red"></span>
+          <span class="panel-title">Agent Task Input</span>
+        </div>
+        <div class="task-presets">
+          <span class="preset-label">Quick Tasks:</span>
+          <button class="preset-btn" onclick="setTask('Find the top 5 AI startups funded in 2024 and extract their funding amounts, founders, and investors')">Research</button>
+          <button class="preset-btn" onclick="setTask('Search for a round-trip flight from Delhi to New York next month under $800 and summarize the best options')">Travel</button>
+          <button class="preset-btn" onclick="setTask('Compare prices of iPhone 16 Pro across Amazon, Flipkart, and Croma and find the best deal')">Shopping</button>
+          <button class="preset-btn" onclick="setTask('Find the latest news about Microsoft Azure AI updates from the past week and create a summary report')">News</button>
+        </div>
+        <textarea id="task-input" class="task-textarea" placeholder="Describe what you want the agent to do...&#10;&#10;Example: Find the top 5 trending GitHub repositories this week, extract their names, stars, and descriptions, and format them as a report."></textarea>
+        <div class="task-config">
+          <div class="config-row">
+            <label>Agent Mode</label>
+            <select class="config-select" id="agent-mode">
+              <option>Autonomous (Full Auto)</option>
+              <option>Supervised (Confirm Steps)</option>
+              <option>Research Only (Read-only)</option>
+            </select>
+          </div>
+          <div class="config-row">
+            <label>Max Steps</label>
+            <input type="range" min="5" max="50" value="20" class="config-slider" id="max-steps" oninput="document.getElementById('steps-val').textContent=this.value">
+            <span class="slider-val" id="steps-val">20</span>
+          </div>
+          <div class="config-row">
+            <label>Speed</label>
+            <select class="config-select" id="agent-speed">
+              <option>Normal (Visible)</option>
+              <option>Fast</option>
+              <option>Turbo</option>
+            </select>
+          </div>
+        </div>
+        <button class="run-btn" id="run-btn" onclick="runAgent()">
+          <span id="run-btn-text">⬡ Launch Agent</span>
+          <div class="btn-ripple"></div>
+        </button>
+        <button class="stop-btn" id="stop-btn" onclick="stopAgent()" style="display:none">■ Stop Agent</button>
+      </div>
+
+      <!-- Right: Execution Trace -->
+      <div class="demo-output-panel">
+        <div class="panel-header">
+          <span class="panel-dot green"></span>
+          <span class="panel-dot yellow"></span>
+          <span class="panel-dot red"></span>
+          <span class="panel-title">Execution Trace</span>
+          <div class="panel-header-right">
+            <div class="agent-status" id="agent-status">
+              <span class="status-dot idle"></span>
+              <span id="status-text">Idle</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Browser Mockup -->
+        <div class="browser-mock" id="browser-mock">
+          <div class="browser-bar">
+            <div class="browser-controls">
+              <button class="browser-btn">←</button>
+              <button class="browser-btn">→</button>
+              <button class="browser-btn">↺</button>
+            </div>
+            <div class="browser-url" id="browser-url">about:blank</div>
+            <div class="browser-actions">
+              <span id="browser-loading" style="display:none" class="browser-spinner">⟳</span>
+            </div>
+          </div>
+          <div class="browser-content" id="browser-content">
+            <div class="browser-idle-state">
+              <div class="idle-icon">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                  <polygon points="32,4 60,18 60,46 32,60 4,46 4,18" stroke="#00FFB2" stroke-width="1.5" fill="none" opacity="0.5"/>
+                  <circle cx="32" cy="32" r="8" stroke="#00FFB2" stroke-width="1.5" fill="none"/>
+                  <circle cx="32" cy="32" r="2" fill="#00FFB2"/>
+                </svg>
+              </div>
+              <p>Agent ready. Awaiting task...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Steps Log -->
+        <div class="steps-log" id="steps-log">
+          <div class="log-empty">No execution logs yet. Launch an agent task to begin.</div>
+        </div>
+
+        <!-- Output Result -->
+        <div class="output-result" id="output-result" style="display:none">
+          <div class="result-header">
+            <span class="result-icon">✓</span>
+            <span class="result-title">Task Complete</span>
+            <button class="copy-btn" onclick="copyResult()">Copy Output</button>
+          </div>
+          <div class="result-body" id="result-body"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture Section -->
+  <section class="architecture" id="architecture">
+    <div class="section-label">ARCHITECTURE</div>
+    <h2 class="section-title">How NEXUS Works</h2>
+    <div class="arch-diagram">
+      <div class="arch-layer layer-input">
+        <div class="arch-label">USER INPUT</div>
+        <div class="arch-box">Natural Language Goal</div>
+        <div class="arch-arrow">↓</div>
+      </div>
+      <div class="arch-layer layer-planner">
+        <div class="arch-label">PLANNING LAYER</div>
+        <div class="arch-boxes-row">
+          <div class="arch-box">Task Decomposer</div>
+          <div class="arch-box accent">LLM Planner<br/><small>GPT-4o / Claude</small></div>
+          <div class="arch-box">Priority Queue</div>
+        </div>
+        <div class="arch-arrow">↓</div>
+      </div>
+      <div class="arch-layer layer-executor">
+        <div class="arch-label">EXECUTION LAYER</div>
+        <div class="arch-boxes-row">
+          <div class="arch-box">Browser Agent<br/><small>Playwright</small></div>
+          <div class="arch-box">API Connector<br/><small>REST / GraphQL</small></div>
+          <div class="arch-box">Data Extractor<br/><small>LLM + Regex</small></div>
+          <div class="arch-box">Form Filler<br/><small>Structured Input</small></div>
+        </div>
+        <div class="arch-arrow">↓</div>
+      </div>
+      <div class="arch-layer layer-memory">
+        <div class="arch-label">MEMORY & RECOVERY</div>
+        <div class="arch-boxes-row">
+          <div class="arch-box">Short-Term Context<br/><small>Session Memory</small></div>
+          <div class="arch-box">Long-Term Store<br/><small>Vector DB</small></div>
+          <div class="arch-box">Error Handler<br/><small>Retry + Replan</small></div>
+        </div>
+        <div class="arch-arrow">↓</div>
+      </div>
+      <div class="arch-layer layer-output">
+        <div class="arch-label">OUTPUT</div>
+        <div class="arch-box accent">Structured Result + Trace Log</div>
+      </div>
+    </div>
+
+    <div class="tech-stack">
+      <div class="section-label" style="text-align:center; margin-bottom: 2rem;">TECH STACK</div>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-icon">🧠</div>
+          <div class="tech-name">Azure OpenAI</div>
+          <div class="tech-role">LLM Backbone</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">🎭</div>
+          <div class="tech-name">Playwright</div>
+          <div class="tech-role">Browser Automation</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">⚡</div>
+          <div class="tech-name">FastAPI</div>
+          <div class="tech-role">Agent Backend</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">🗄️</div>
+          <div class="tech-name">Pinecone</div>
+          <div class="tech-role">Vector Memory</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">🔗</div>
+          <div class="tech-name">LangChain</div>
+          <div class="tech-role">Agent Framework</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">📡</div>
+          <div class="tech-name">WebSockets</div>
+          <div class="tech-role">Real-time Streaming</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="usecases" id="usecases">
+    <div class="section-label">USE CASES</div>
+    <h2 class="section-title">Built for Real Problems</h2>
+    <div class="usecases-grid">
+      <div class="usecase-card" data-color="#00FFB2">
+        <div class="uc-number">01</div>
+        <h3>Competitive Intelligence</h3>
+        <p>Monitor competitor websites, pricing pages, and product updates daily. Get structured diffs delivered to your inbox.</p>
+        <div class="uc-example">"Track pricing changes on Stripe's website every Monday"</div>
+      </div>
+      <div class="usecase-card" data-color="#FF6B35">
+        <div class="uc-number">02</div>
+        <h3>Research Automation</h3>
+        <p>Aggregate data from dozens of sources, cross-reference facts, and compile structured reports in minutes.</p>
+        <div class="uc-example">"Summarize all Y Combinator W25 companies in B2B SaaS"</div>
+      </div>
+      <div class="usecase-card" data-color="#A78BFA">
+        <div class="uc-number">03</div>
+        <h3>E-commerce Workflows</h3>
+        <p>Compare prices across platforms, track stock availability, and execute purchases when conditions are met.</p>
+        <div class="uc-example">"Buy noise-cancelling headphones under ₹8000 with 4+ stars"</div>
+      </div>
+      <div class="usecase-card" data-color="#FFD700">
+        <div class="uc-number">04</div>
+        <h3>Travel Planning</h3>
+        <p>Search flights, compare hotels, check visa requirements, and build complete itineraries across multiple booking sites.</p>
+        <div class="uc-example">"Plan a 5-day trip to Tokyo in March under $2000"</div>
+      </div>
+      <div class="usecase-card" data-color="#00FFB2">
+        <div class="uc-number">05</div>
+        <h3>Form & Application Filing</h3>
+        <p>Fill and submit web forms, upload documents, and complete multi-step applications with your pre-stored profile.</p>
+        <div class="uc-example">"Apply to all open SDE-2 roles at FAANG companies"</div>
+      </div>
+      <div class="usecase-card" data-color="#FF6B35">
+        <div class="uc-number">06</div>
+        <h3>Social Media Management</h3>
+        <p>Schedule posts, gather analytics, respond to comments, and monitor brand mentions across platforms.</p>
+        <div class="uc-example">"Post this announcement to LinkedIn, Twitter, and Instagram"</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Docs / Setup Section -->
+  <section class="docs-section" id="docs">
+    <div class="section-label">QUICK START</div>
+    <h2 class="section-title">Get Running in 5 Minutes</h2>
+    <div class="docs-grid">
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">bash</span>
+          <button class="code-copy" onclick="copyCode(this, 'install-code')">Copy</button>
+        </div>
+        <pre id="install-code"><code><span class="cm"># Clone & Install</span>
+git clone https://github.com/your-org/nexus-agent
+cd nexus-agent
+
+<span class="cm"># Backend Setup (Python 3.11+)</span>
+cd backend
+pip install -r requirements.txt
+cp .env.example .env
+<span class="cm"># Add AZURE_OPENAI_KEY, OPENAI_ENDPOINT, PINECONE_KEY</span>
+
+<span class="cm"># Frontend Setup</span>
+cd ../frontend
+npm install
+
+<span class="cm"># Start both services</span>
+npm run dev:full</code></pre>
+      </div>
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">python</span>
+          <button class="code-copy" onclick="copyCode(this, 'api-code')">Copy</button>
+        </div>
+        <pre id="api-code"><code><span class="cm"># Using the Python SDK</span>
+<span class="kw">from</span> nexus <span class="kw">import</span> AgentClient
+
+agent = AgentClient(api_key=<span class="st">"..."</span>)
+
+<span class="cm"># Run an autonomous task</span>
+result = agent.run(
+  task=<span class="st">"Find top 10 open source LLM projects on GitHub"</span>,
+  mode=<span class="st">"autonomous"</span>,
+  max_steps=<span class="nm">20</span>,
+  output_format=<span class="st">"json"</span>
+)
+
+<span class="kw">print</span>(result.data)       <span class="cm"># Structured output</span>
+<span class="kw">print</span>(result.trace)      <span class="cm"># Full execution trace</span>
+<span class="kw">print</span>(result.steps_used) <span class="cm"># # of steps taken</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <div class="logo-mark">
+        <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+          <polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00FFB2" stroke-width="1.5" fill="none"/>
+          <circle cx="14" cy="14" r="2.5" fill="#00FFB2"/>
+        </svg>
+      </div>
+      <span>NEXUS</span>
+    </div>
+    <p class="footer-sub">Built for Microsoft Hackathon 2025 — Agentic Web Theme</p>
+    <p class="footer-note">Autonomous agents that navigate, extract, and act across the web.</p>
+  </footer>
+
+  <script src="src/utils/agent-simulation.js"></script>
+  <script src="src/utils/animations.js"></script>
+  <script src="src/utils/main.js"></script>
+</body>
+</html>
