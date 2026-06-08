@@ -1,5 +1,5 @@
 # NEXUS — Agentic Web Platform
-### Microsoft Hackathon 2025 | Agentic Web Theme
+Agentic Web Theme
 
 > An autonomous AI agent that browses, interacts, and gets things done on the web on your behalf — without hand-holding.
 
