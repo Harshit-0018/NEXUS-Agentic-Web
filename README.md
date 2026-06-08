@@ -216,6 +216,23 @@ User Input (Natural Language)
 
 ---
 
+##Live Demo
+
+### Frontpage(Start)
+<img width="1914" height="908" alt="image" src="https://github.com/user-attachments/assets/290a54f8-f675-4689-a544-092fd5a65243" />
+
+### Watch Nexus Work
+<img width="1918" height="911" alt="image" src="https://github.com/user-attachments/assets/a071391d-2efa-4280-969c-a48a8d3043f3" />
+
+### How Nexus Work
+<img width="1918" height="911" alt="image" src="https://github.com/user-attachments/assets/b7f2bee7-e0f5-43ac-9772-5fb64ae9c2d6" />
+
+### Built for Real Problems
+<img width="1912" height="837" alt="image" src="https://github.com/user-attachments/assets/bfc39f8d-0e7d-4ff3-b396-35528a4fea31" />
+
+---
+
+
 ### Key Design Decisions
 
 **ReAct Loop**: The agent uses Reasoning + Acting (ReAct) — at each step it thinks, then acts, then observes the result. This allows dynamic replanning.
