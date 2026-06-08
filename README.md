@@ -216,7 +216,7 @@ User Input (Natural Language)
 
 ---
 
-##Live Demo
+## Live Demo
 
 ### Frontpage(Start)
 <img width="1914" height="908" alt="image" src="https://github.com/user-attachments/assets/290a54f8-f675-4689-a544-092fd5a65243" />
@@ -229,6 +229,9 @@ User Input (Natural Language)
 
 ### Built for Real Problems
 <img width="1912" height="837" alt="image" src="https://github.com/user-attachments/assets/bfc39f8d-0e7d-4ff3-b396-35528a4fea31" />
+
+### Docs
+<img width="1917" height="904" alt="image" src="https://github.com/user-attachments/assets/fda275df-ecaf-48c4-bdb2-167df12df049" />
 
 ---
 
@@ -268,7 +271,7 @@ User Input (Natural Language)
 
 ---
 
-##  Hackathon Notes
+##  Notes
 
 **Theme**: Agentic Web — Build autonomous agents that navigate websites, extract information, complete transactions, and orchestrate actions across services.
 
@@ -285,5 +288,4 @@ User Input (Natural Language)
 
 ## 📝 License
 
-MIT License — Built for Microsoft Hackathon 2025
 Harshit !!!
