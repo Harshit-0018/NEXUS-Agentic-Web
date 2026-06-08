@@ -225,7 +225,7 @@ User Input (Natural Language)
 <img width="1918" height="911" alt="image" src="https://github.com/user-attachments/assets/a071391d-2efa-4280-969c-a48a8d3043f3" />
 
 ### How Nexus Work
-<img width="1918" height="911" alt="image" src="https://github.com/user-attachments/assets/b7f2bee7-e0f5-43ac-9772-5fb64ae9c2d6" />
+<img width="1918" height="891" alt="image" src="https://github.com/user-attachments/assets/ff9b7cb7-ade8-401f-a4db-b0d0b630b2b1" />
 
 ### Built for Real Problems
 <img width="1912" height="837" alt="image" src="https://github.com/user-attachments/assets/bfc39f8d-0e7d-4ff3-b396-35528a4fea31" />
