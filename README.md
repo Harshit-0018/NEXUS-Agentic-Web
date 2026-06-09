@@ -213,7 +213,6 @@ User Input (Natural Language)
 
 <img width="1360" height="1840" alt="image" src="https://github.com/user-attachments/assets/30cf8f80-6dfa-4c30-ab40-221460da6f84" />
 
-
 ---
 
 ## Live Demo
@@ -288,4 +287,4 @@ User Input (Natural Language)
 
 ## 📝 License
 
-Harshit !!!
+Harshit !
