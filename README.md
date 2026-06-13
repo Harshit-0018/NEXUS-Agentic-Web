@@ -43,7 +43,8 @@ nexus-agent/
 
 ### Option A — Frontend Only (No Setup Required)
 
-Just open `index.html` in your browser. The interactive demo works fully in-browser with a simulated agent.
+Just open `index.html` in your browser. The interactive demo works fully in-browser with a simulated agent. Or else follow the Instructions.
+I prefer you to use the Full Stack one with all the features by putting your API's.
 
 ```bash
 # If you want a local server (optional):
@@ -272,7 +273,7 @@ User Input (Natural Language)
 
 ##  Notes
 
-**Theme**: Agentic Web — Build autonomous agents that navigate websites, extract information, complete transactions, and orchestrate actions across services.
+Agentic Web — Build autonomous agents that navigate websites, extract information, complete transactions, and orchestrate actions across services.
 
 **What makes NEXUS stand out**:
 1. **Real browser automation** — Not just API calls; actual Playwright browser
