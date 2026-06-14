@@ -288,4 +288,4 @@ Agentic Web — Build autonomous agents that navigate websites, extract informat
 
 ## 📝 License
 
-Harshit !
+Harshit Singh !
